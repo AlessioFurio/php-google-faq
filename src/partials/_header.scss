@@ -1,0 +1,56 @@
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-logo {
+    width: 74px;
+    height: 24px;
+}
+
+.wp-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting {
+    width: 24px;
+    height: 24px;
+}
+
+.setting img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-bottom ul li {
+    display: inline-block;
+}
