@@ -1,7 +1,5 @@
 @import 'partials/variables.scss';
 @import 'partials/commons.scss';
 @import 'partials/header.scss';
-
-h1 {
-    color: $colorText;
-}
+@import 'partials/main.scss';
+@import 'partials/footer.scss';

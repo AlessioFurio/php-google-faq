@@ -48,6 +48,8 @@ $faqs = [
     <head>
         <meta charset="utf-8">
         <title>php-google-faq</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="dist/app.css">
     </head>
     <body>
@@ -61,7 +63,7 @@ $faqs = [
                         <img src="dist/images/logo.png" alt="">
                     </div>
                     <div class="privacy">
-                        <h1>Privacy e Termini</h1>
+                        <h3>Privacy e Termini</h3>
                     </div>
                 </div>
 
@@ -97,24 +99,51 @@ $faqs = [
         </header>
 
         <div class="container">
-            <?php
-            foreach ($faqs as $key => $faq) { ?>
-
-                <h1>
-                    <?php echo $key; ?>
-                </h1>
+            <div class="faq">
                 <?php
-                foreach ($faq as $answer) {
+                foreach ($faqs as $key => $faq) { ?>
 
-                    for ($i=0; $i <count($answer) ; $i++) { ?>
+                    <h2>
+                        <?php echo $key; ?>
+                    </h2>
+                    <?php
+                    foreach ($faq as $answer) {
 
-                        <p> <?php echo ($answer[$i]); ?> </p>
+                        for ($i=0; $i <count($answer) ; $i++) { ?>
 
-                        <?php
+                            <p> <?php echo ($answer[$i]); ?> </p>
+
+                            <?php
+                        }
                     }
                 }
-            }
-            ?>
+                ?>
+            </div>
         </div>
+
+        <footer>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Google</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutto su Google</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Termini</a>
+                    </li>
+                </ul>
+
+                <div class="select">
+                    <select class="" name="">
+                        <option value="">Italiano</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

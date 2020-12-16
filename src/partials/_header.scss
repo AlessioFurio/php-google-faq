@@ -1,3 +1,11 @@
+header h3,
+header ul li a {
+    color: $colorTextHeader;
+}
+
+header h3 {
+    font-weight: 400;
+}
 
 .header-top {
     display: flex;
@@ -9,11 +17,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: $spaceItemHeader;
 }
 
 .wp-logo {
     width: 74px;
     height: 24px;
+    margin-right: $spaceItemHeader/2;
 }
 
 .wp-logo img {
@@ -26,11 +36,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: $spaceItemHeader;
 }
 
 .setting {
     width: 24px;
     height: 24px;
+    margin-right: $spaceItemHeader;
 }
 
 .setting img {
@@ -43,14 +55,25 @@
 .profile {
     width: 32px;
     height: 32px;
+
 }
 
 .profile img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 50%;
+}
+
+.header-bottom {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.header-bottom ul {
+    padding: 0 0 $spaceItemHeader $spaceItemHeader;
 }
 
 .header-bottom ul li {
     display: inline-block;
+    padding-right: $spaceItemHeader*2;
 }
